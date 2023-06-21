@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    
+    <script src="jquery-3.7.0.js"></script>
+    <script src="jquery.mask.js"></script>
+    <script src="viacep.js"></script>
+    <script src="mascara.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Formulario de inscricao para o workshop tech</h2>
+
+
+        <form id="myForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="sname">Sobrenome:</label>
+            <input type="text" id="sname" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label>CEP</label>
+            <input type="text" id="i_cep" placeholder="00000-000" onblur="pesquisa_cep(this.value)" required>
+
+            <label>Rua</label>
+            <input type="text" id="i_rua" required>
+
+            <label>Bairro</label>
+            <input type="text" id="i_bairro" required>
+
+            <label>Cidade</label>
+            <input type="text" id="i_cidade" required>
+
+            <label>Estado</label>
+            <input type="text" id="i_estado" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
+    </div>
+    
+</body>
+
+</html>
